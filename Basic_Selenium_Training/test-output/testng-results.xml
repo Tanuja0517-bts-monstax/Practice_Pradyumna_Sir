@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-15T15:24:14 IST" name="Default suite" finished-at="2024-07-15T15:25:10 IST" duration-ms="55944">
+  <suite started-at="2024-08-06T15:54:34 IST" name="Suite" finished-at="2024-08-06T15:54:35 IST" duration-ms="103">
     <groups>
     </groups>
-    <test started-at="2024-07-15T15:24:14 IST" name="Default test" finished-at="2024-07-15T15:25:10 IST" duration-ms="55944">
-      <class name="TestNgFeature.Working_With_DataProvider">
-        <test-method signature="login()[pri:0, instance:TestNgFeature.Working_With_DataProvider@5ab9e72c]" started-at="2024-07-15T15:24:15 IST" name="login" finished-at="2024-07-15T15:25:10 IST" duration-ms="55568" status="PASS">
+    <test started-at="2024-08-06T15:54:34 IST" name="Test" finished-at="2024-08-06T15:54:35 IST" duration-ms="103">
+      <class name="seleniumTask.TestScriptListenerImplementation">
+        <test-method signature="testCaseTest1()[pri:0, instance:seleniumTask.TestScriptListenerImplementation@71238fc2]" started-at="2024-08-06T15:54:35 IST" name="testCaseTest1" finished-at="2024-08-06T15:54:35 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- TestNgFeature.Working_With_DataProvider -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testCaseTest1 -->
+        <test-method signature="testCaseTest2()[pri:0, instance:seleniumTask.TestScriptListenerImplementation@71238fc2]" started-at="2024-08-06T15:54:35 IST" name="testCaseTest2" finished-at="2024-08-06T15:54:35 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseTest2 -->
+        <test-method signature="testCaseTest3()[pri:0, instance:seleniumTask.TestScriptListenerImplementation@71238fc2]" started-at="2024-08-06T15:54:35 IST" name="testCaseTest3" finished-at="2024-08-06T15:54:35 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseTest3 -->
+      </class> <!-- seleniumTask.TestScriptListenerImplementation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
