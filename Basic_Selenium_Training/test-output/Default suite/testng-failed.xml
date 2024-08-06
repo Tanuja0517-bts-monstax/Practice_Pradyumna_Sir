@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNgFeature.Working_With_SoftAssertion">
+      <class name="seleniumTask.Hotstar_Test">
         <methods>
-          <include name="search"/>
+          <include name="loginToHotstar_Test"/>
+          <include name="closeBrowser"/>
+          <include name="launchURL"/>
+          <include name="tryToPlaySomeThingFromHome"/>
+          <include name="logOut"/>
         </methods>
-      </class> <!-- TestNgFeature.Working_With_SoftAssertion -->
+      </class> <!-- seleniumTask.Hotstar_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
