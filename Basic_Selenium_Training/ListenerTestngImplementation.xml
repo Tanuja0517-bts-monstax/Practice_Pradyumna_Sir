@@ -9,4 +9,9 @@
       <class name="seleniumTask.TestScriptListenerImplementation"/>
     </classes>
   </test> <!-- Test -->
+  <test thread-count="5" name="Test1">
+    <classes>
+      <class name="seleniumTask.TestScriptListenerImplementation2"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

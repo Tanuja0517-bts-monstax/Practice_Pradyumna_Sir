@@ -12,5 +12,7 @@ public class Working_With_AlertPopups {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.get("https://demoapp.skillrary.com/");
+		
+		driver.quit();
 	}
 }

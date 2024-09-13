@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -14,9 +15,9 @@ import com.beust.jcommander.Parameter;
 
 public class Working_With_Parameters {
 	WebDriver driver;
-	@Parameters("browser")
+	@Parameters("browser2")
 	@Test
-	public void login(String browser) {
+	public void login(@Optional("Chrome")String browser) {
 		if(browser.equalsIgnoreCase("chrome")) {
 			driver=new ChromeDriver();
 			driver.manage().window().maximize();

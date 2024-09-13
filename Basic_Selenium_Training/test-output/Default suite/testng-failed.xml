@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumTask.Hotstar_Test">
+      <class name="TestNgFeature.Working_With_Parameters">
         <methods>
-          <include name="loginToHotstar_Test"/>
-          <include name="closeBrowser"/>
-          <include name="launchURL"/>
-          <include name="tryToPlaySomeThingFromHome"/>
-          <include name="logOut"/>
+          <include name="login" invocation-numbers="0"/>
         </methods>
-      </class> <!-- seleniumTask.Hotstar_Test -->
+      </class> <!-- TestNgFeature.Working_With_Parameters -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
