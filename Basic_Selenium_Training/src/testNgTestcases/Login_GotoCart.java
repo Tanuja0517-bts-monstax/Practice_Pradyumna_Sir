@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class Login_GotoCart {
-	@Test
+	@Test(timeOut = 10)
 	public void loginViewCart() {
 		//Launch Browser
 		WebDriver driver=new ChromeDriver();
@@ -28,6 +28,7 @@ public class Login_GotoCart {
 		
 		//Goto Cart page
 		driver.findElement(By.xpath("//span[text()='Shopping cart']")).click();
+		
 		
 		//Close browser
 		driver.quit();

@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="Test(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="seleniumScripts.ExecutingParallelMethod">
+      <class name="testNgTestcases.TC01">
         <methods>
-          <include name="method2_Test"/>
-          <include name="method1_Test"/>
+          <include name="beforeClass"/>
+          <include name="searchProduct"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- seleniumScripts.ExecutingParallelMethod -->
+      </class> <!-- testNgTestcases.TC01 -->
+      <class name="testNgTestcases.GotoWishList">
+        <methods>
+          <include name="goingToWishlist"/>
+        </methods>
+      </class> <!-- testNgTestcases.GotoWishList -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

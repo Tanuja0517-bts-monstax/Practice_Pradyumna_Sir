@@ -11,6 +11,8 @@ public class HandleNotificationPopup {
 		ChromeOptions coption=new ChromeOptions();
 		coption.addArguments("--disable-notifications");
 		
+		//WeDriver driver=new ChromeDriver(new ChromeOptions().addArguments("--disable-notifications"))
+		
 		WebDriver driver=new ChromeDriver(coption);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

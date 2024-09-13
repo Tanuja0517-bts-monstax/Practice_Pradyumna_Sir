@@ -19,5 +19,7 @@ public class WebDriverMethods {
 		
 		driver.findElement(By.partialLinkText("Log in")).click();
 		driver.findElement(By.xpath("//a[text()='YouTube']")).click();
+		driver.quit();
+		//driver.close();
 	}
 }

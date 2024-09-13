@@ -1,17 +1,27 @@
 package seleniumTask;
 
+import org.testng.IRetryAnalyzer;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
+import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class ListenerImplementation implements ITestListener,ISuiteListener{
 	public void onStart(ISuite suite) {
-	    System.out.println("On start");
+	    System.out.println("On start of suite");
 	  }
 	
 	public void onFinish(ISuite suite) {
-	    System.out.println("On finish");
+	    System.out.println("On finish of suite");
+	  }
+	
+	public void onStart(ITestContext context) {
+		    System.out.println("on start of test");
+	 }
+	
+	public void onFinish(ITestContext context) {
+	    System.out.println("on finish of test");
 	  }
 	
 	public void onTestStart(ITestResult result) {

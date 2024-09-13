@@ -5,13 +5,22 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class GotoWishList {
+	@Parameters("browser")
 	@Test
-	public void goingToWishlist() {
+	public void goingToWishlist(String browser) {
 		//Launch Browser
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver=null;
+		if(browser.equalsIgnoreCase("Chrome"))
+			driver=new ChromeDriver();
+		else if(browser.equalsIgnoreCase("Firefox"))
+			driver=new FirefoxDriver();
+		else
+			driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 				
