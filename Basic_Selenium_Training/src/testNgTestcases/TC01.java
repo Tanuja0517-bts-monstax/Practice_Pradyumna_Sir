@@ -50,7 +50,7 @@ public class TC01 {
 	
 	@Test
 	public void searchProduct() {
-		driver.findElement(By.id("small-searchterms")).sendKeys("Somputers");
+		driver.findElement(By.id("small-searchterms")).sendKeys("Computers");
 		driver.findElement(By.xpath("//input[@value='Search']")).click();
 	}
 	

@@ -15,7 +15,7 @@ import com.beust.jcommander.Parameter;
 
 public class Working_With_Parameters {
 	WebDriver driver;
-	@Parameters("browser2")
+	@Parameters("browser1")
 	@Test
 	public void login(@Optional("Chrome")String browser) {
 		if(browser.equalsIgnoreCase("chrome")) {
@@ -28,6 +28,7 @@ public class Working_With_Parameters {
 			driver.findElement(By.id("Email")).sendKeys("sonawaletanuja55@gmail.com");
 			driver.findElement(By.id("Password")).sendKeys("Tanuja@0803");
 			driver.findElement(By.xpath("//input[@value='Log in']")).click();
+			driver.quit();
 		}
 		
 		else if(browser.equalsIgnoreCase("firefox")) {
@@ -40,6 +41,7 @@ public class Working_With_Parameters {
 			driver.findElement(By.id("Email")).sendKeys("sonawaletanuja55@gmail.com");
 			driver.findElement(By.id("Password")).sendKeys("Tanuja@0803");
 			driver.findElement(By.xpath("//input[@value='Log in']")).click();
+			driver.quit();
 		}
 		
 		else if(browser.equalsIgnoreCase("edge")) {
@@ -52,6 +54,7 @@ public class Working_With_Parameters {
 			driver.findElement(By.id("Email")).sendKeys("sonawaletanuja55@gmail.com");
 			driver.findElement(By.id("Password")).sendKeys("Tanuja@0803");
 			driver.findElement(By.xpath("//input[@value='Log in']")).click();
+			driver.quit();
 		}
 	}
 }

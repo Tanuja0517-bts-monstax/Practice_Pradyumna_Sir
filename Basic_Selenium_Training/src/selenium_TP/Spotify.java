@@ -38,16 +38,16 @@ public class Spotify {
 		driver.findElement(By.id("onetrust-close-btn-container")).click();
 		//Login(Can't perform)
 		driver.findElement(By.xpath("//span[text()='Log in']")).click();
-		driver.findElement(By.id("login-username")).sendKeys("tanujans@gmail.com");
-		driver.findElement(By.id("login-password")).sendKeys("Tanuja@1234");
+		driver.findElement(By.id("login-username")).sendKeys("sonawaletanu0803@gmail.com");
+		driver.findElement(By.id("login-password")).sendKeys("Tanuja@0730");
 		driver.findElement(By.xpath("//span[text()='Log In']")).click();
 		
 		//Search song
-//		driver.findElement(By.xpath("//input[@placeholder='What do you want to play?']")).sendKeys("Ishq");
-//		Actions act=new Actions(driver);
-//		act.moveToElement(driver.findElement(By.xpath("//div[@data-testid='herocard-click-handler']"))).perform();
-//		
-//		driver.findElement(By.xpath("//button[@aria-label='Play']")).click();
-		//driver.quit();
+		driver.findElement(By.xpath("//input[@placeholder='What do you want to play?']")).sendKeys("Ishq");
+		Actions act=new Actions(driver);
+		act.moveToElement(driver.findElement(By.xpath("//div[@data-testid='herocard-click-handler']"))).perform();
+		
+		driver.findElement(By.xpath("//button[@aria-label='Play']")).click();
+		driver.quit();
 	}
 }
