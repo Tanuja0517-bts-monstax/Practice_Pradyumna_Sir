@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNgFeature.Working_With_Parameters">
+      <class name="testNgTestcases.Login_GotoCart">
         <methods>
-          <include name="login" invocation-numbers="0"/>
+          <include name="loginViewCart"/>
         </methods>
-      </class> <!-- TestNgFeature.Working_With_Parameters -->
+      </class> <!-- testNgTestcases.Login_GotoCart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

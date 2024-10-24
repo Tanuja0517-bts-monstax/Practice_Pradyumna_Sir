@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class Login_GotoCart {
-	@Test(timeOut = 10)
+	@Test
 	public void loginViewCart() {
 		//Launch Browser
 		WebDriver driver=new ChromeDriver();

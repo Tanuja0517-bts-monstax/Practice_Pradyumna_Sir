@@ -13,6 +13,7 @@ public class VotingTest {
 	public void vote() {
 		//Launch Browser
 		WebDriver driver=new ChromeDriver();
+		System.out.println("Hiii");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 						
