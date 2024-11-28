@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNgTestcases.Login_GotoCart">
+      <class name="selenium_TP.FileUpload">
         <methods>
-          <include name="loginViewCart"/>
+          <include name="show"/>
         </methods>
-      </class> <!-- testNgTestcases.Login_GotoCart -->
+      </class> <!-- selenium_TP.FileUpload -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
