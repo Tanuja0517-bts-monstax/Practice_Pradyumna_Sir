@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class WebDriverMethods {
+public class Working_With_WebDriverMethods {
 	public static void main(String[] args) {
 		WebDriver driver=new ChromeDriver();
 		

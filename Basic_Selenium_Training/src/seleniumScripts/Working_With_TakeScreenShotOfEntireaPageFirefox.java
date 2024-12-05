@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class TakeScreenShotOfEntireaPageFirefox {
+public class Working_With_TakeScreenShotOfEntireaPageFirefox {
 	public static void main(String[] args) throws IOException {
 		FirefoxDriver driver=new FirefoxDriver();
 		driver.get("https://demowebshop.tricentis.com/register");

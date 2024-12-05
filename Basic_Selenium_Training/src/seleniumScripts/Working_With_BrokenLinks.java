@@ -20,7 +20,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  *  
  *  We used the HttpURLConnection class to check the response status of each link’s URL. If the response code is 200, 
  *  the link is considered valid; otherwise, it’s marked as a broken link.*/
-public class BrokenLinks {
+public class Working_With_BrokenLinks {
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
 

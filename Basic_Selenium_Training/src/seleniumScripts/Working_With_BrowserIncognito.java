@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 
-public class BrowserIncognito {
+public class Working_With_BrowserIncognito {
 	@Test
 	public void launchBrowser() {
 		ChromeOptions option=new ChromeOptions();

@@ -17,17 +17,15 @@ public class KSRTC_CalanderPopup {
 		boolean flag=true;
 		driver.get("https://ksrtc.in/");
 		driver.findElement(By.id("imgDepartDate")).click();
-		while(flag) {
 		try {
-			driver.findElement(By.xpath("//span[text()='"+month+"']")).getText();
-			if((driver.findElement(By.xpath("//span[text()='"+month+"']")).getText()).equals(month))
-				flag=false;
+			while(flag) {
+				driver.findElement(By.xpath("//span[text()='"+month+"']")).getText();
+				if((driver.findElement(By.xpath("//span[text()='"+month+"']")).getText()).equals(month))
+					flag=false;
+			}
 		}
 		catch(Exception e) {
 			driver.findElement(By.xpath("//a[@title='Next']")).click();
-			
-			//while(!driver.findElement(By.xpath("//span[text()='"+month+"']")).getText().equals(month)) {
-		}
 		}
 		Actions act=new Actions(driver);
 		act.scrollToElement(driver.findElement(By.xpath("//span[text()='"+month+"']/ancestor::div[contains(@class,'ui-datepicker-group')]/table/tbody/tr/td[.='"+date+"']"))).perform();

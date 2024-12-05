@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-public class HandleNotificationPopup {
+public class Working_With_HandleNotificationPopup {
 	public static void main(String[] args) {
 		ChromeOptions coption=new ChromeOptions();
 		coption.addArguments("--disable-notifications");

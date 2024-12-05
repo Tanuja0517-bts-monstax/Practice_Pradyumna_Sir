@@ -16,7 +16,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class TakingScreenshot_WebPageSS {
+public class Working_With_TakingScreenshot_WebPageSS {
 	public static void main(String[] args) throws Exception {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
