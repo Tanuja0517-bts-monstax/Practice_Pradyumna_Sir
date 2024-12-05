@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium_TP.FileUpload">
+      <class name="seleniumTask.TestScriptListenerImplementation">
         <methods>
-          <include name="show"/>
+          <include name="testCaseTest1"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- selenium_TP.FileUpload -->
+      </class> <!-- seleniumTask.TestScriptListenerImplementation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

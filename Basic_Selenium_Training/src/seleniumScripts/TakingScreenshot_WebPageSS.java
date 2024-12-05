@@ -10,7 +10,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class TakingScreenshot_WebPageSS {
@@ -48,7 +51,6 @@ public class TakingScreenshot_WebPageSS {
 		
 		//coping the screenshot to file
 		FileHandler.copy(ss, locaiton);
-		
 		//close browser
 		driver.quit();
 	}

@@ -1,5 +1,6 @@
 package seleniumTask;
 
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 //team project we use Pull
@@ -8,6 +9,7 @@ import org.testng.annotations.Test;
 public class TestScriptListenerImplementation extends ConfigurationAnnotations{
 	@Test(retryAnalyzer = ImplementingIretryAnalyser.class)
 	public void testCaseTest1() {
+		Assert.fail();
 		System.out.println("This is testcase 1");
 	}
 	

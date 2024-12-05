@@ -1,5 +1,6 @@
 package seleniumTask;
 
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.IRetryAnalyzer;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
@@ -30,6 +31,9 @@ public class ListenerImplementation implements ITestListener,ISuiteListener{
 	
 	public void onTestSuccess(ITestResult result) {
 	    System.out.println("On Test Success");
+	    System.out.println("get test name:"+result.getTestName());
+	    System.out.println("getName:"+result.getName());
+	    System.out.println("get method name:"+result.getMethod().getMethodName());
 	  }
 	
 	public void onTestFailure(ITestResult result) {
