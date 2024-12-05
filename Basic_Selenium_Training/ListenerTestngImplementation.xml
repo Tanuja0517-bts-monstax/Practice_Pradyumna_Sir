@@ -6,7 +6,8 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="seleniumTask.TestScriptListenerImplementation"/>
+      <class name="seleniumTask.TestScriptListenerImplementation">
+      </class>
     </classes>
   </test> <!-- Test -->
   <test thread-count="5" name="Test1">

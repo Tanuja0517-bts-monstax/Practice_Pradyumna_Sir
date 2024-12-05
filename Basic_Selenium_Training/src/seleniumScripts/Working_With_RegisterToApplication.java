@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.locators.RelativeLocator;
 
-public class RegisterToApplication {
+public class Working_With_RegisterToApplication {
 	public static void main(String[] args) {
 		
 		//Launch Browser

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class Working_With_Closed_ShdowRoot_Elemnt {
+public class Working_With_Closed_ShadowRoot_Elemnt {
 	public static void main(String[] args) throws Exception {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
