@@ -19,7 +19,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
  *  essentially invalid HTTP requests have 4xx and 5xx status codes.
  *  
  *  We used the HttpURLConnection class to check the response status of each link’s URL. If the response code is 200, 
- *  the link is considered valid; otherwise, it’s marked as a broken link.*/
+ *  the link is considered valid; otherwise, it’s marked as a broken link.
+ *  
+ *  Reason's of broken links:
+ *  1. Maybe the page is removed from the web application
+ *  2. Maybe the web site structure has been modified(firstly it was in one page, but now it is in some other page but
+ *  the links are not modified(So it will give 404 page not found error).*/
 public class Working_With_BrokenLinks {
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
