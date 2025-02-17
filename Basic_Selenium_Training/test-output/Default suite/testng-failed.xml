@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumScripts.Working_With_ReadingDataFromXMLFile">
+      <class name="testNgTestcases.TC01">
         <methods>
-          <include name="readData" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="searchProduct"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- seleniumScripts.Working_With_ReadingDataFromXMLFile -->
+      </class> <!-- testNgTestcases.TC01 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

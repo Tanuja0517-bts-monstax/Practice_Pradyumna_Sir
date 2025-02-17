@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
-  <parameter name="un" value="sonawaletanuja55@gmail.com"/>
-  <parameter name="pwd" value="Tanuja@0803"/>
-  <parameter name="url" value="https://demowebshop.tricentis.com/"/>
+  <listeners>
+    <listener class-name="seleniumTask.ListenerImplementation"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="seleniumScripts.Working_With_ReadingDataFromXMLFile">
+      <class name="seleniumTask.TestScriptListenerImplementation">
         <methods>
-          <include name="readData" invocation-numbers="0"/>
+          <include name="testCaseTest1"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- seleniumScripts.Working_With_ReadingDataFromXMLFile -->
+      </class> <!-- seleniumTask.TestScriptListenerImplementation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
