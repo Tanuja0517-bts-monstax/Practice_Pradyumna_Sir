@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class Working_With_JavascriptExecutor_Test {
 	@Test
 	public void login() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "path");
+		//System.setProperty("webdriver.chrome.driver", "path");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -24,5 +24,7 @@ public class Working_With_JavascriptExecutor_Test {
 		js.executeScript("document.getElementById('user_submit').click();");
 		js.executeScript("alert('enter correct login credentials to continue');");
 		Thread.sleep(2000);
+		
+		driver.quit();
 	}
 }
