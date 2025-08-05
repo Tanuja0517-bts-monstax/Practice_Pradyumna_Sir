@@ -1,10 +1,13 @@
 package seleniumScripts;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 public class Working_With_IFrame {
 	public static void main(String[] args) throws Exception {
@@ -39,4 +42,17 @@ public class Working_With_IFrame {
 		//close browser
 		driver.quit();
  	}
+	
+	@Test
+	public void framess() {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		driver.get("https://demoapps.qspiders.com/ui/frames?sublist=0");
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='w-full h-96']")));
+		
+		driver.findElement(By.id("username")).sendKeys("cvbnm");
+		driver.quit();
+	}
 }

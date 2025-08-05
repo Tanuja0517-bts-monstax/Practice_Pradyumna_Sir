@@ -11,4 +11,7 @@ public class Child extends Parent{
 	public void attitude() {
 		
 	}
+	public static void behaviour() {
+		System.out.println("hiiii");
+	}
 }

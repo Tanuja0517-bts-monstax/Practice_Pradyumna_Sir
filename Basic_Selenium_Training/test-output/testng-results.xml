@@ -1,57 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-08T15:16:09 IST" name="Default suite" finished-at="2025-05-08T15:16:09 IST" duration-ms="81">
+  <suite started-at="2025-07-28T11:14:42 IST" name="Default suite" finished-at="2025-07-28T11:14:51 IST" duration-ms="9397">
     <groups>
     </groups>
-    <test started-at="2025-05-08T15:16:09 IST" name="Default test" finished-at="2025-05-08T15:16:09 IST" duration-ms="81">
-      <class name="TestNgFeature.DataProviderClassUser">
-        <test-method signature="workking(java.lang.String)[pri:0, instance:TestNgFeature.DataProviderClassUser@2a54a73f]" started-at="2025-05-08T15:16:09 IST" name="workking" data-provider="provideData" finished-at="2025-05-08T15:16:09 IST" duration-ms="30" status="FAIL">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-[public void TestNgFeature.DataProviderClassUser.workking(java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: workking([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) iphone,(java.lang.String) Apple iPhone 15 (Black, 256 GB)]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void TestNgFeature.DataProviderClassUser.workking(java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: workking([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) iphone,(java.lang.String) Apple iPhone 15 (Black, 256 GB)]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:914)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+    <test started-at="2025-07-28T11:14:42 IST" name="Default test" finished-at="2025-07-28T11:14:51 IST" duration-ms="9397">
+      <class name="seleniumScripts.Working_With_SubStringXpath">
+        <test-method signature="subStringXpath()[pri:0, instance:seleniumScripts.Working_With_SubStringXpath@71238fc2]" started-at="2025-07-28T11:14:42 IST" name="subStringXpath" finished-at="2025-07-28T11:14:51 IST" duration-ms="9337" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- workking -->
-      </class> <!-- TestNgFeature.DataProviderClassUser -->
+        </test-method> <!-- subStringXpath -->
+      </class> <!-- seleniumScripts.Working_With_SubStringXpath -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
