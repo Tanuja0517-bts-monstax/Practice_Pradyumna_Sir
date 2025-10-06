@@ -16,7 +16,6 @@ public class WorkingWith_RelativeXpath {
 		
 		driver.get("https://demoapps.qspiders.com/ui?scenario=1");
 		driver.findElement(RelativeLocator.with(By.id("name")).above(driver.findElement(By.xpath("//label[text()='Email Id']")))).sendKeys("hiiii");
-		
 		//WebElement ele=driver.findElement(By.xpath("//label[text()='Email Id']"));
 		Thread.sleep(5000);
 		driver.quit();
