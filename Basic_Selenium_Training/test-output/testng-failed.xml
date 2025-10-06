@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumScripts.Working_With_IFrame">
+      <class name="TestNgFeature.DataProviderClassUser">
         <methods>
-          <include name="framess"/>
+          <include name="workking"/>
         </methods>
-      </class> <!-- seleniumScripts.Working_With_IFrame -->
+      </class> <!-- TestNgFeature.DataProviderClassUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

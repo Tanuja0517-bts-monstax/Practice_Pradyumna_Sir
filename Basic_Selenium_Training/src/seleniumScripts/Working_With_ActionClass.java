@@ -27,7 +27,7 @@ public class Working_With_ActionClass {
 		
 		//Scrolling upto element
 		act.scrollToElement(driver.findElement(By.xpath("//a[contains(text(),'expensive computer')]"))).perform();
-		
+	
 		//doubleClick method
 		act.doubleClick(driver.findElement(By.partialLinkText("BOOKS"))).perform();
 		Thread.sleep(2000);
