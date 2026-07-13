@@ -11,7 +11,7 @@ public class Working_With_IFrame {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		
-		driver.get("file:///C:/Users/User/OneDrive/Desktop/Selenium/Iframe.html");
+		driver.get("file://C:/Users/User/OneDrive/Desktop/Selenium/Iframe.html");
 		
 		//switchTo frame by index
 		driver.switchTo().frame(1);
@@ -22,11 +22,11 @@ public class Working_With_IFrame {
 		act.sendKeys(Keys.ENTER).perform();
 		driver.switchTo().defaultContent();
 		
-		//switchTo frame by name attribute
+	/*	//switchTo frame by name attribute
 		driver.switchTo().frame("skillrary");
 		driver.findElement(By.linkText("LOGIN")).click();
 		Thread.sleep(3000);
-		driver.switchTo().parentFrame();
+		driver.switchTo().parentFrame();*/
 		
 		//switchTo frame by webElement
 		driver.switchTo().frame(driver.findElement(By.id("FR2")));
@@ -39,4 +39,17 @@ public class Working_With_IFrame {
 		//close browser
 		driver.quit();
  	}
+	
+/*	@Test
+	public void framess() {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		driver.get("https://demoapps.qspiders.com/ui/frames?sublist=0");
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='w-full h-96']")));
+		
+		driver.findElement(By.id("username")).sendKeys("cvbnm");
+		driver.quit();
+	}*/
 }

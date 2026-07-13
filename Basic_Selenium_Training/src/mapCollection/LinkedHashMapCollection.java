@@ -1,10 +1,12 @@
 package mapCollection;
 
+import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map.Entry;
 import java.util.Set;
 
 public class LinkedHashMapCollection {
+
 	public static void main(String[] args) {
 		LinkedHashMap<Character,Long> lhm=new LinkedHashMap<>();
 		lhm.put('a', 8308111348l);
@@ -18,7 +20,8 @@ public class LinkedHashMapCollection {
 		System.out.println("Size:"+lhm.size());
 		Set keys=lhm.keySet();
 		System.out.println("Keys:"+keys);
-		
+		Collection<Long>values=lhm.values();
+		System.out.println("Values:"+values);
 		for(Entry<Character, Long> e: lhm.entrySet()) {
 			System.out.println("Key:"+e.getKey()+" Value:"+e.getValue());
 		}

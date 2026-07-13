@@ -11,7 +11,7 @@ public class MethodChaining {
 	}
 	
 	public void present() {
-		this.show();
+		show();
 		System.out.println("Kahtro ke Khiladi");
 	}
 }

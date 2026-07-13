@@ -8,7 +8,7 @@ public class Parent {
 		System.out.println("Stage Name:"+stageName);
 	}
 	
-	public void behaviour() {
+	public static void behaviour() {
 		System.out.println("Is fun loving, is not that strict, is not very famous");
 	}
 }

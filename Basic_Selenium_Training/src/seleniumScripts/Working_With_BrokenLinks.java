@@ -53,8 +53,6 @@ public class Working_With_BrokenLinks {
 			try {
 				URL link = new URL(url);
 				HttpURLConnection httpURLConnection = (HttpURLConnection) link.openConnection();
-				httpURLConnection.setConnectTimeout(3000); // Set connection timeout to 3 seconds
-				httpURLConnection.connect();
 
 
 				if (httpURLConnection.getResponseCode() == 200) {

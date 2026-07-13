@@ -14,17 +14,25 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.beust.jcommander.Parameter;
 
 public class TC01 {
 	public WebDriver driver;
+	
+	@Parameters("browser")
 	@BeforeSuite
-	public void beforeSuite() {
+	public void beforeSuite(@Optional("chromoe")String browser) {
 		//Lauching Browser
-		driver=new ChromeDriver();
+		WebDriver driver=null;
+		if(browser.equalsIgnoreCase("Chrome"))
+			driver=new ChromeDriver();
+		else if(browser.equalsIgnoreCase("Firefox"))
+			driver=new FirefoxDriver();
+		else
+			driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}

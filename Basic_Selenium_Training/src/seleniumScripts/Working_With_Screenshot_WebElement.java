@@ -36,7 +36,7 @@ public class Working_With_Screenshot_WebElement {
 		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[@class='bar-notification success']"))));
 		WebElement msg=driver.findElement(By.xpath("//div[@class='bar-notification success']"));
 		
-		TakesScreenshot tss=(TakesScreenshot)driver;
+		//TakesScreenshot tss=(TakesScreenshot)driver;
 		File ss=msg.getScreenshotAs(OutputType.FILE);
 		File location=new File("./screenShot/AddToCart.png");
 		FileHandler.copy(ss,location);

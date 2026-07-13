@@ -6,13 +6,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class GotoWishList {
 	@Parameters("browser")
 	@Test
-	public void goingToWishlist(String browser) {
+	public void goingToWishlist(@Optional("chrome")String browser) {
 		//Launch Browser
 		WebDriver driver=null;
 		if(browser.equalsIgnoreCase("Chrome"))

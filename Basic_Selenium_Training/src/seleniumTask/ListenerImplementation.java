@@ -11,6 +11,7 @@ import org.testng.ITestResult;
 public class ListenerImplementation implements ITestListener,ISuiteListener{
 	public void onStart(ISuite suite) {
 	    System.out.println("On start of suite");
+	    System.out.println("Suite name:"+suite.getName());
 	  }
 	
 	public void onFinish(ISuite suite) {
@@ -19,6 +20,9 @@ public class ListenerImplementation implements ITestListener,ISuiteListener{
 	
 	public void onStart(ITestContext context) {
 		    System.out.println("on start of test");
+		    System.out.println("test name:"+context.getName());
+		    System.out.println("host name:"+context.getHost());
+		    System.out.println("");
 	 }
 	
 	public void onFinish(ITestContext context) {

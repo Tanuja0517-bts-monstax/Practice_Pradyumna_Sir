@@ -26,10 +26,8 @@ public class Working_With_Closed_ShadowRoot_Elemnt {
 		driver.findElement(By.xpath("//h1[text()='Login']")).click();
 		
 		Actions act=new Actions(driver);
-		act.sendKeys(Keys.TAB).perform();
-		act.sendKeys("tanuja").perform();
-		act.sendKeys(Keys.TAB).perform();
-		act.sendKeys("sonawale").perform();
+		act.sendKeys(Keys.TAB,"tanuja").perform();
+		act.sendKeys(Keys.TAB,"sonawale").perform();
 		Thread.sleep(2000);
 		
 		driver.quit();

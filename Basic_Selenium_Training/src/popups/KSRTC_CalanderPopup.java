@@ -8,8 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class KSRTC_CalanderPopup {
-	public static void main(String[] args) {
-		String month="January";
+	public static void main(String[] args) throws InterruptedException {
+		String month="March";
 		String date="3";
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
@@ -30,6 +30,7 @@ public class KSRTC_CalanderPopup {
 		Actions act=new Actions(driver);
 		act.scrollToElement(driver.findElement(By.xpath("//span[text()='"+month+"']/ancestor::div[contains(@class,'ui-datepicker-group')]/table/tbody/tr/td[.='"+date+"']"))).perform();
 		driver.findElement(By.xpath("//span[text()='"+month+"']/ancestor::div[contains(@class,'ui-datepicker-group')]/table/tbody/tr/td[.='"+date+"']")).click();
+		Thread.sleep(5000);
 		driver.quit();
 	}
 }

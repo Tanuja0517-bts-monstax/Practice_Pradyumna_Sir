@@ -32,5 +32,11 @@ public class Driver {
 		c.details("Abhishek Bachchan", 48, "Dhoom", "Bhaiyu");
 		c.attitude();
 		System.out.println("***************************************************************");
+		
+		Parent p1=new Child();
+		p1.behaviour();
+		
+		Child c1=(Child)p1;
+		c1.behaviour();
 	}
 }

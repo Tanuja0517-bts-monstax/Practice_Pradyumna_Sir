@@ -27,16 +27,16 @@ public class Working_With_ActionClass {
 		
 		//Scrolling upto element
 		act.scrollToElement(driver.findElement(By.xpath("//a[contains(text(),'expensive computer')]"))).perform();
-		
+	
 		//doubleClick method
 		act.doubleClick(driver.findElement(By.partialLinkText("BOOKS"))).perform();
 		Thread.sleep(2000);
 		
 		//clickAndHold & release method
 		act.clickAndHold(driver.findElement(By.xpath("//ul[@class='top-menu']//a[contains(text(),'Apparel')]"))).perform();
-		act.release(driver.findElement(By.xpath("//ul[@class='top-menu']//a[contains(text(),'Apparel')]"))).perform();
+		act.release(driver.findElement(By.xpath("//ul[@class='top-menu']//a[contains(text(),'Apparel')]"))).build().perform();
 		Thread.sleep(2000);
-		
+	
 		//keyDown & keyUp & sendKeys
 		act.sendKeys(driver.findElement(By.id("small-searchterms")), "Mobile").perform();
 		act.keyDown(driver.findElement(By.xpath("//input[@value='Search']")), Keys.ENTER).perform();

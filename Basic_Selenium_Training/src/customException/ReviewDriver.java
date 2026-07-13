@@ -3,8 +3,8 @@ package customException;
 import java.util.Scanner;
 
 public class ReviewDriver {
-	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) throws FoodDeliveryReview {
+	/*	Scanner sc=new Scanner(System.in);
 		System.out.print("Enter product name:");
 		String pname=sc.nextLine();
 		System.out.print("Enter product quantity:");
@@ -24,8 +24,17 @@ public class ReviewDriver {
 			System.out.println("Sorry for the inconvenience, We will improve ourselves");
 		}
 		
+		
+		
 		finally {
 			System.out.println("Thank you for buying product from us😊😊");
-		}
+		}*/
+		
+		FoodOrder order = new FoodOrder("Biriyani", 2);
+		String review="Bad";
+		if(review.equalsIgnoreCase("bad"))
+			throw new FoodDeliveryReview("I didn't like the food");
+		else
+			System.out.println("Food was good");
 	}
 }

@@ -2,23 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-06T15:53:54 IST" name="Suite" finished-at="2024-12-06T15:54:06 IST" duration-ms="12010">
+  <suite started-at="2025-11-24T13:19:14 IST" name="Default suite" finished-at="2025-11-24T13:19:29 IST" duration-ms="14178">
     <groups>
     </groups>
-    <test started-at="2024-12-06T15:53:54 IST" name="Test" finished-at="2024-12-06T15:54:06 IST" duration-ms="12010">
-      <class name="seleniumScripts.Working_With_ReadingDataFromXMLFile">
-        <test-method signature="readData(org.testng.xml.XmlTest)[pri:0, instance:seleniumScripts.Working_With_ReadingDataFromXMLFile@3d6f0054]" started-at="2024-12-06T15:53:54 IST" name="readData" finished-at="2024-12-06T15:54:06 IST" duration-ms="11942" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.xml.XmlTest@577f2ea3]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-11-24T13:19:14 IST" name="Default test" finished-at="2025-11-24T13:19:29 IST" duration-ms="14178">
+      <class name="seleniumScripts.Working_With_JavascriptExecutor_Test">
+        <test-method signature="login()[pri:0, instance:seleniumScripts.Working_With_JavascriptExecutor_Test@71238fc2]" started-at="2025-11-24T13:19:14 IST" name="login" finished-at="2025-11-24T13:19:29 IST" duration-ms="14118" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- readData -->
-      </class> <!-- seleniumScripts.Working_With_ReadingDataFromXMLFile -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- login -->
+      </class> <!-- seleniumScripts.Working_With_JavascriptExecutor_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

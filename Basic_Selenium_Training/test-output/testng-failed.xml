@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumScripts.Working_With_ReadingDataFromXMLFile">
+      <class name="seleniumScripts.Working_With_JavascriptExecutor_Test">
         <methods>
-          <include name="readData" invocation-numbers="0"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- seleniumScripts.Working_With_ReadingDataFromXMLFile -->
+      </class> <!-- seleniumScripts.Working_With_JavascriptExecutor_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
