@@ -53,7 +53,6 @@ public class Working_With_SelectClass {
 		//Select drop down(isMultipleSelect)
 		System.out.println("Is Multiple Select:"+sortBy.isMultiple());
 		
-		
 		WebElement elee=option.getWrappedElement();
 		System.out.println("Element:"+elee.getText());
 		

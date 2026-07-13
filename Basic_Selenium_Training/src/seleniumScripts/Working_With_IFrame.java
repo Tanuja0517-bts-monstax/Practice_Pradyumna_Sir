@@ -1,20 +1,17 @@
 package seleniumScripts;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.Test;
 
 public class Working_With_IFrame {
 	public static void main(String[] args) throws Exception {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		
-		driver.get("file:///C:/Users/User/OneDrive/Desktop/Selenium/Iframe.html");
+		driver.get("file://C:/Users/User/OneDrive/Desktop/Selenium/Iframe.html");
 		
 		//switchTo frame by index
 		driver.switchTo().frame(1);
@@ -25,11 +22,11 @@ public class Working_With_IFrame {
 		act.sendKeys(Keys.ENTER).perform();
 		driver.switchTo().defaultContent();
 		
-		//switchTo frame by name attribute
+	/*	//switchTo frame by name attribute
 		driver.switchTo().frame("skillrary");
 		driver.findElement(By.linkText("LOGIN")).click();
 		Thread.sleep(3000);
-		driver.switchTo().parentFrame();
+		driver.switchTo().parentFrame();*/
 		
 		//switchTo frame by webElement
 		driver.switchTo().frame(driver.findElement(By.id("FR2")));
@@ -43,7 +40,7 @@ public class Working_With_IFrame {
 		driver.quit();
  	}
 	
-	@Test
+/*	@Test
 	public void framess() {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -54,5 +51,5 @@ public class Working_With_IFrame {
 		
 		driver.findElement(By.id("username")).sendKeys("cvbnm");
 		driver.quit();
-	}
+	}*/
 }

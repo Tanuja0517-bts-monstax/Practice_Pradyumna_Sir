@@ -34,9 +34,9 @@ public class Working_With_ActionClass {
 		
 		//clickAndHold & release method
 		act.clickAndHold(driver.findElement(By.xpath("//ul[@class='top-menu']//a[contains(text(),'Apparel')]"))).perform();
-		act.release(driver.findElement(By.xpath("//ul[@class='top-menu']//a[contains(text(),'Apparel')]"))).perform();
+		act.release(driver.findElement(By.xpath("//ul[@class='top-menu']//a[contains(text(),'Apparel')]"))).build().perform();
 		Thread.sleep(2000);
-		
+	
 		//keyDown & keyUp & sendKeys
 		act.sendKeys(driver.findElement(By.id("small-searchterms")), "Mobile").perform();
 		act.keyDown(driver.findElement(By.xpath("//input[@value='Search']")), Keys.ENTER).perform();

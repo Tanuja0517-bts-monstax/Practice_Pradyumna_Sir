@@ -16,10 +16,11 @@ public class Working_With_FluentWait {
 		
 		driver.get("https://demowebshop.tricentis.com");
 		WebElement search=driver.findElement(By.id("small-searchterms"));
-		
+	
 		FluentWait fwait=new FluentWait(driver);
 		
 		search.sendKeys("Computers");
+		
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		
 		WebElement searchPage=driver.findElement(By.xpath("//h1[text()='Search']"));

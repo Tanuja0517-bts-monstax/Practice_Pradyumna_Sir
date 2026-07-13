@@ -7,7 +7,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Working_With_JavaScriptExecutor {
@@ -23,6 +22,8 @@ public class Working_With_JavaScriptExecutor {
 		jse.executeScript("document.getElementById('small-searchterms').value=' Computers'");
 		
 		WebElement searchButn=driver.findElement(By.xpath("//input[@type='submit']"));
+		jse.executeScript("arguments[0].scrollIntoView(true)", searchButn);
+		jse.executeScript("window.scrollBy(0,500);");
 		jse.executeScript("arguments[0].click()",searchButn);
 		
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(2000));

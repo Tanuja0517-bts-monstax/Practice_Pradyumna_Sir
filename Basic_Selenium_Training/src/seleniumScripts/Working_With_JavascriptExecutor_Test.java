@@ -20,11 +20,17 @@ public class Working_With_JavascriptExecutor_Test {
 		
 		driver.get("https://www.browserstack.com/users/sign_in");
 		js.executeScript("document.getElementById('user_email_login').value='rbc@xyz.com';");
+		Thread.sleep(3000);
+		
+		System.out.println(js.executeScript("return document.getElementById('user_email_login').value;"));
 		js.executeScript("document.getElementById('user_password').value='password';");
 		js.executeScript("document.getElementById('user_submit').click();");
 		js.executeScript("alert('enter correct login credentials to continue');");
-		Thread.sleep(2000);
 		
+//		String msg = (String) js.executeScript("return window.alertMessage;");
+//		System.out.println("Msg:"+msg);
+		Thread.sleep(2000);
+
 		driver.quit();
 	}
 }
